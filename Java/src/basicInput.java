@@ -13,6 +13,6 @@ public class basicInput
 
 		keyboard.close();
 
-		System.out.println("Hello, " + name);
+		System.out.println("Hello, " + name + "!");
 	}
 }
