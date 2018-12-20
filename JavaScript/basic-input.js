@@ -1,5 +1,12 @@
-let name = "Jared"
+const readline = require('readline')
 
-//get input from user
+const rl = readline.createInterface({
+	input: process.stdin,
+	output: process.stdout
+});
 
-console.log("Hello, " + name + "!")
+rl.question('Enter your name: ', (name) => {
+	console.log("Hello, " + name + "!")
+	rl.close()
+});
+
