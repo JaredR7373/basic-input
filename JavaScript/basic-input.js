@@ -1,12 +1,5 @@
-const readline = require('readline')
+const read = require('readline-sync')
 
-const rl = readline.createInterface({
-	input: process.stdin,
-	output: process.stdout
-});
+let name = read.question("Enter your name: ");
 
-rl.question('Enter your name: ', (name) => {
-	console.log("Hello, " + name + "!")
-	rl.close()
-});
-
+console.log("Hello, " + name + "!")
